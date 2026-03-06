@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: '/api' });
-
+const API = axios.create({ 
+  baseURL: 'https://mycart-backend-9y2o.onrender.com/api'
+});
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem('flitcart_token');
   if (token) config.headers.Authorization = `Bearer ${token}`;

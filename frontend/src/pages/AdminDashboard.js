@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { getAllProducts, getAllOrders, getAllUsers, updateOrderStatus, createProduct } from '../utils/api';
+import * as api from '../utils/api';
 import { toast } from 'react-toastify';
 import './AdminDashboard.css';
-
-// Reuse getProducts from api
-import { getProducts, updateOrderStatus as updateStatus } from '../utils/api';
-import * as api from '../utils/api';
 
 export default function AdminDashboard() {
   const [tab, setTab] = useState('overview');

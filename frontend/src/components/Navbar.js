@@ -9,7 +9,6 @@ export default function Navbar() {
   const { cartCount } = useCart();
   const navigate = useNavigate();
   const [search, setSearch] = useState('');
-  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleSearch = (e) => {
     e.preventDefault();
