@@ -1,0 +1,15 @@
+.footer { background: #172337; color: rgba(255,255,255,0.7); margin-top: 40px; }
+.footer-top { padding: 40px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.footer-col h4 { color: rgba(255,255,255,0.5); font-size: 11px; letter-spacing: 1px; margin-bottom: 16px; }
+.footer-col a { display: block; color: rgba(255,255,255,0.8); text-decoration: none; font-size: 13px; margin-bottom: 10px; }
+.footer-col a:hover { color: #fff; }
+.footer-bottom { padding: 20px 0; }
+.footer-bottom .container { display: flex; justify-content: space-between; align-items: center; }
+.footer-bottom p { font-size: 12px; }
+.payment-icons { display: flex; gap: 12px; font-size: 20px; }
+
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .footer-bottom .container { flex-direction: column; gap: 12px; text-align: center; }
+}

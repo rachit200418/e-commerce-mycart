@@ -1,0 +1,25 @@
+.product-list-page { padding: 20px 0; }
+.product-list-layout { display: grid; grid-template-columns: 240px 1fr; gap: 20px; align-items: start; }
+
+.filters-sidebar { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; position: sticky; top: 120px; }
+.filters-sidebar h3 { font-size: 16px; font-weight: 700; padding-bottom: 12px; border-bottom: 1px solid var(--border); margin-bottom: 16px; }
+.filter-group { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+.filter-group h4 { font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 12px; }
+.filter-option { display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; margin-bottom: 8px; }
+.filter-option input { cursor: pointer; accent-color: var(--primary); }
+.clear-filter { background: none; border: none; color: var(--primary); font-size: 12px; cursor: pointer; padding: 4px 0; font-family: inherit; }
+.price-inputs { display: flex; align-items: center; gap: 8px; }
+.price-inputs .form-control { padding: 6px 8px; font-size: 13px; }
+
+.products-main { min-height: 600px; }
+.products-header { display: flex; align-items: center; justify-content: space-between; background: #fff; padding: 16px 20px; border-radius: var(--radius); box-shadow: var(--shadow); margin-bottom: 16px; }
+.products-header h2 { font-size: 18px; }
+.results-count { font-size: 13px; color: var(--muted); margin-top: 2px; }
+.sort-select { width: 200px; padding: 8px 12px; }
+
+.pagination { display: flex; justify-content: center; gap: 8px; margin-top: 32px; }
+.page-btn { padding: 8px 14px; border: 1.5px solid var(--border); background: #fff; border-radius: 4px; cursor: pointer; font-size: 14px; transition: all 0.2s; }
+.page-btn:hover { border-color: var(--primary); color: var(--primary); }
+.page-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+@media (max-width: 900px) { .product-list-layout { grid-template-columns: 1fr; } .filters-sidebar { position: static; } }
